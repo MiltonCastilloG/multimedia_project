@@ -1,0 +1,56 @@
+.navbar {
+    position: absolute;
+    width: 90%;
+    margin: 10px 5% 0px 5%;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+}
+.navbar-item{
+    display: flex;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/logo.png');
+    background-size: 100% 100%;
+}
+.social-links{
+    font-size: 20px;
+    margin: auto;
+}
+.icon{
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.x-icon .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.x-icon .bar2 {
+    opacity: 0;
+}
+
+.x-icon .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.social-links a{
+    color: white;
+    margin-left: 10px;
+}
