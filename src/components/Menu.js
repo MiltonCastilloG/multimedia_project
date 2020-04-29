@@ -23,7 +23,7 @@ const Menu = ({closeMenu}) => {
                         </Link>
                     </div>
                     <div className="menu-item">
-                        <Link to="/news" className="menu-item-text" onClick={closeMenu}>
+                        <Link to="/about" className="menu-item-text" onClick={closeMenu}>
                             Sobre el proyecto
                         </Link>
                     </div>
