@@ -1,5 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/6f9f8e02d34c92c423fdda861988aba1?family=Mystery+Quest);
-
+/* @import url(https://db.onlinewebfonts.com/c/6f9f8e02d34c92c423fdda861988aba1?family=Mystery+Quest); */
+@font-face {
+    font-family: "Mystery Quest";
+    src: url(./assets/fonts/mystic.woff2);
+    font-weight: bold;
+}
 html {
     background-color: #10141b;
     font-family: "Comic Sans MS", serif;
