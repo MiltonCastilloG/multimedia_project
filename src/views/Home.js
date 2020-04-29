@@ -1,5 +1,6 @@
 import React from "react";
-import '../assets/css/Home.css';
+import { Link } from "react-router-dom";
+import '../assets/css/views/Home.css';
 
 const Home = () => {
     return (
@@ -12,7 +13,9 @@ const Home = () => {
                     Cuatro Lunas
                 </h1>
                 <div className="cover-button-container">
-                    <button className="cover-button">DESCUBRE LA HISTORIA</button>
+                    <Link to="/history">
+                        <button className="cover-button">DESCUBRE LA HISTORIA</button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import '../assets/css/NavBar.css';
+import '../assets/css/components/NavBar.css';
 
 const iconOneClass = "hamburger-icon";
 const iconTwoClass = "x-icon";
 
-const NavBar = ({iconFlag, menuIconCallback}) => {
+const NavBar = ({iconFlag, menuIconCallback, closeMenu}) => {
 
     const iconClass = iconFlag ? iconTwoClass : iconOneClass;
     
@@ -21,7 +21,7 @@ const NavBar = ({iconFlag, menuIconCallback}) => {
             </div>
             </div>
             <div className="navbar-item">
-                <Link to="/">
+                <Link to="/" onClick={closeMenu}>
                     <div className="logo"></div>
                 </Link>
             </div>
