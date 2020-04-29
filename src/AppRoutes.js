@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import CharactersView from "./views/CharactersView.js";
 import Home from "./views/Home.js";
 import HistoryView from "./views/HistoryView.js";
+import CharacterPageView from "./views/CharacterPageView.js"
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,9 @@ const AppRoutes = () => {
       </Route>
       <Route exact path="/characters">
         <CharactersView />
+      </Route>
+      <Route path="/character-page-view">
+        <CharacterPageView />
       </Route>
     </Switch>
   );

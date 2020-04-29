@@ -1,0 +1,45 @@
+.character-page-view-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../img/wonderland-wallpaper.jpg');
+    background-position: center; 
+}
+.character-page-view-container::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.character-page-content{
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+}
+.character-page-name{
+    font-family: "Mystery Quest";
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    cursor: default;
+    margin-bottom: 30px;
+}
+.character-description-container{
+    margin: 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.character-img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-image: url('../../img/character.png');
+    font-size: 60px;
+    text-align: center;
+    color: black;
+}
