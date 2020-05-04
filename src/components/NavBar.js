@@ -26,7 +26,7 @@ const NavBar = ({iconFlag, menuIconCallback, closeMenu}) => {
                 </Link>
             </div>
             <div className="navbar-item">
-                <div class="social-links">
+                <div className="social-links">
                     <a href="https://www.instagram.com/cu4trolunas/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>

@@ -18,6 +18,9 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
+            <div className="company-name">
+                Presentado por: SIXIEME COMPANY
+            </div>
         </div>
     );
 }

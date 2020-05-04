@@ -13,14 +13,14 @@
     flex-direction: row;
     justify-content: center;
 }
+/*The code for what background image is used is in the view js itself
+since it needs to change depending on the character */
 .select-character-button{
     margin: 0px 10px 0px;
     height: 60vh;
-    width: 12vw;
-    background-image: url('../../img/character.png');
+    width: 15vw;
     background-size: cover;
-    background-position: right top;
-    background-color: white;
+    background-position: center top;
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +30,7 @@
     color: white;
 }
 .character-button-space{
-    height: 86%;
+    height: 85%;
     width: 100%;
 }
 .character-name{

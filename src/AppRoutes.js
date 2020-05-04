@@ -9,21 +9,11 @@ import AboutView from "./views/AboutView.js"
 const AppRoutes = () => {
   return (
     <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/history">
-        <HistoryView />
-      </Route>
-      <Route exact path="/characters">
-        <CharactersView />
-      </Route>
-      <Route path="/character-page-view">
-        <CharacterPageView />
-      </Route>
-      <Route path="/about">
-        <AboutView />
-      </Route>
+      <Route exact path="/" component={Home} />
+      <Route path="/history" component={HistoryView} />
+      <Route path="/characters" component={CharactersView} />
+      <Route path="/character-page-view/:id" component={CharacterPageView} />
+      <Route path="/about" component={AboutView} />
     </Switch>
   );
 };
