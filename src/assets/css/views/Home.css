@@ -17,7 +17,7 @@
 .cover-content{
     width: 100%;
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 100px;
 }
 .cover-title{
     font-family: "Mystery Quest";
@@ -57,3 +57,21 @@
     bottom: 0;
     position: absolute;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .cover-button {
+        width: 100%;
+        font-size: 15px;
+    }
+    .cover-title{
+        font-size: 110px;
+        margin-bottom: 10px;
+    }
+    .cover-subtitle{
+        font-size: 30px;
+    }
+    .company-name{
+        font-size: 15px;
+    }
+  }

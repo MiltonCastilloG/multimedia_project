@@ -23,3 +23,17 @@
     font-size: 18px;
     line-height: 30px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .history-view-cover {
+        height: 450px;
+    }
+    .history-view-title {
+        margin-top: 100px;
+    }
+    .history-view-content{
+        padding: 40px 20px 40px;
+        text-align: justify;
+    }
+}
