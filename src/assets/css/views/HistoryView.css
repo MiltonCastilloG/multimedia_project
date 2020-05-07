@@ -16,6 +16,7 @@
     background-color: #10141b;
     color: #fff;
     padding: 40px 250px 40px;
+    text-align: justify;
 }
 .history-view-text{
     margin-top: 0px;
@@ -34,6 +35,5 @@
     }
     .history-view-content{
         padding: 40px 20px 40px;
-        text-align: justify;
     }
 }

@@ -8,10 +8,8 @@ const App = () => {
   const [menuFlag, setMenuFlag] = useState(false);
 
   useEffect(() => {
-
     if(menuFlag) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
-    
   }, [menuFlag]);
 
   const toggleMenu = () => setMenuFlag(!menuFlag)

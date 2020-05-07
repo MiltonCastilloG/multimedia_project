@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../assets/css/views/CharactersView.css';
-import charactersInfo from '../services/stub.js'
+import charactersInfo from '../services/characterStub.js';
 
 const CharactersView = () => {
 
     const characterButtons = charactersInfo.map( (item, index) =>{
-        const backgroundImage = require(`../assets/img/${item.full_photo}`);
         return (
             <div
             className="select-character-button"
-            style={{ backgroundImage: `url("${backgroundImage}")` }}
+            style={{ backgroundImage: `url("${item.full_photo}")` }}
             key={index}
             >
                 <Link className="select-character-link" to={`/character-page-view/${index}`}>

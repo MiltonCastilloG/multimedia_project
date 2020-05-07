@@ -1,0 +1,18 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gallery-container h1{
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-image{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+}
