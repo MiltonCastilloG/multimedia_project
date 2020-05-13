@@ -47,7 +47,7 @@ since it needs to change depending on the character */
     word-wrap: break-word;
     white-space: pre-line;
     text-align: justify;
-    font-size: 18px;
+    font-size: 22px;
 }
 .gallery-label{
     text-align: center;
@@ -57,6 +57,9 @@ since it needs to change depending on the character */
     /* For mobile phones: */
     .character-description-container{
         margin: 0px 55px 0px;
+    }
+    .character-description{
+        font-size: 18px;
     }
     
 }

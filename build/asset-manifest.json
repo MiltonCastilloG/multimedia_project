@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.409ff37b.chunk.css",
+    "main.js": "/static/js/main.fc768a9e.chunk.js",
+    "main.js.map": "/static/js/main.fc768a9e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e6643e8a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e6643e8a.js.map",
+    "static/js/2.57781972.chunk.js": "/static/js/2.57781972.chunk.js",
+    "static/js/2.57781972.chunk.js.map": "/static/js/2.57781972.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4b0d5c776acc5a1556306de89eee09a9.js": "/precache-manifest.4b0d5c776acc5a1556306de89eee09a9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.409ff37b.chunk.css.map": "/static/css/main.409ff37b.chunk.css.map",
+    "static/js/2.57781972.chunk.js.LICENSE.txt": "/static/js/2.57781972.chunk.js.LICENSE.txt",
+    "static/media/alia_face.jpg": "/static/media/alia_face.d969930f.jpg",
+    "static/media/alia_full.jpg": "/static/media/alia_full.da8a17ff.jpg",
+    "static/media/books_wallpaper.jpg": "/static/media/books_wallpaper.508bbf8b.jpg",
+    "static/media/cristian.jpg": "/static/media/cristian.d5715691.jpg",
+    "static/media/david_face.jpg": "/static/media/david_face.194de0af.jpg",
+    "static/media/david_full.jpg": "/static/media/david_full.1927d687.jpg",
+    "static/media/dayane.png": "/static/media/dayane.61a10919.png",
+    "static/media/Home.css": "/static/media/example_img.76a887ac.jpg",
+    "static/media/julia_face.jpg": "/static/media/julia_face.e7515952.jpg",
+    "static/media/julia_full.jpg": "/static/media/julia_full.d60a3948.jpg",
+    "static/media/NavBar.css": "/static/media/logo.8d93f486.png",
+    "static/media/lucila.jpg": "/static/media/lucila.0a749107.jpg",
+    "static/media/luis.jpg": "/static/media/luis.c1f6d935.jpg",
+    "static/media/milton.jpeg": "/static/media/milton.cbcf5d82.jpeg",
+    "static/media/index.css": "/static/media/mystic.c45a753b.woff2",
+    "static/media/nuria.jpg": "/static/media/nuria.61cd7e0e.jpg",
+    "static/media/HistoryView.css": "/static/media/stars.8c330aa4.webp",
+    "static/media/teresa_face.png": "/static/media/teresa_face.9790c88c.png",
+    "static/media/teresa_full.png": "/static/media/teresa_full.abf848d9.png",
+    "static/media/CharacterPageView.css": "/static/media/wonderland-wallpaper.19c93bdf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6643e8a.js",
+    "static/js/2.57781972.chunk.js",
+    "static/css/main.409ff37b.chunk.css",
+    "static/js/main.fc768a9e.chunk.js"
+  ]
+}

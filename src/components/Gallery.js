@@ -1,14 +1,15 @@
 import React from "react";
 import '../assets/css/components/Gallery.css';
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, imgCallback}) => {
+
     return (
         <div className="gallery-container">
-            <h1>Galería en construcción...</h1>
+            <h1>Galería</h1>
             <div className="gallery">
                 {
                     images.map((item, index) => (
-                        <img 
+                        <img onClick={()=>imgCallback(index)}
                         className="gallery-image"
                         src={item} 
                         alt={index}/>
