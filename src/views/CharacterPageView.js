@@ -6,6 +6,7 @@ import charactersInfo from '../services/characterStub.js';
 
 const useAudio = url => {
     const audio = new Audio(url);
+    audio.loop = false;
     audio.play();
 }
 const CharacterPageView = props => {
