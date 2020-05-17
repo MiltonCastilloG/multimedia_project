@@ -27,6 +27,16 @@ const Menu = ({closeMenu}) => {
                             Sobre el proyecto
                         </Link>
                     </div>
+                    <div className="menu-item">
+                        <Link to="/curiosity" className="menu-item-text" onClick={closeMenu}>
+                            Curiosidades
+                        </Link>
+                    </div>
+                    <div className="menu-item">
+                        <Link to="/recommendation" className="menu-item-text" onClick={closeMenu}>
+                            Recomendaciones
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="menu-cover" onClick={closeMenu}/>

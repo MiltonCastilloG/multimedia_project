@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Gallery from '../components/Gallery';
 import '../assets/css/views/HistoryView.css';
 import historyInfo from '../services/historyStub.js'
 
@@ -23,19 +24,36 @@ const HistoryView = () => {
         </div>
     )
 
+    const getHistoryContent = content => content.map(elem=>{
+        if (elem.type === "text")
+            return <p>{elem.content}</p>
+        else if (elem.type === "audio")
+            return (
+                <audio className="history-audio" controls>
+                    <source
+                    src={require(`../assets/audio/${elem.src}`)}
+                    type={`audio/${elem.media_type}`} />
+                </audio>
+            )
+        else if (elem.type === "image")
+            return <Gallery images={[elem.src]}/>
+        else if (elem.type === "multi-image")
+            return <Gallery images={elem.src}/>
+        else
+            return <div></div>
+    })
+
     return (
         <div className="history-view-container">
             <div className="history-view-cover">
                 <h1 className="history-view-title">
-                    La Historia Hasta el Momento
+                    Historia
                 </h1>
             </div>
             <div className="history-view-content">
                 {historyChapterSelect}
-                <div className="history-view-text">
-                    {historyInfo[historyChapterRef].paragraphs.map(elem=>(
-                        <p>{elem}</p>
-                    ))}
+                <div className="history-view-media">
+                    {getHistoryContent(historyInfo[historyChapterRef].contents)}
                 </div>
             </div>
         </div>

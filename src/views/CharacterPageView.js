@@ -1,31 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Gallery from '../components/Gallery';
-import ImageModal from '../components/ImageModal';
 import '../assets/css/views/CharacterPageView.css';
 import charactersInfo from '../services/characterStub.js';
 
-const useAudio = url => {
-    const audio = new Audio(url);
-    audio.loop = false;
-    audio.play();
-}
 const CharacterPageView = props => {
-    const [imageInModalIndex, setImageInModalIndex] = useState(undefined);
     const character = charactersInfo[props.match.params.id];
 
-    const setImageModal = (index) => setImageInModalIndex(index);
-    const unsetImageModal = () => setImageInModalIndex(undefined);
+    useEffect(()=>{
+        const audio = new Audio(character.welcome_audio);
+        audio.loop = false;
+        audio.play();
+    }, [character]);
 
-    const getImageModalSrc = index => character.gallery[index]; 
-
-    const getImageModal = index => {
-        if(index === undefined)
-            return <div></div>
-        else
-            return <ImageModal image={getImageModalSrc(index)} closeCallback={unsetImageModal}/>
-    }
-
-    useAudio(character.welcome_audio);
+    
 
     return (
         <div>
@@ -36,23 +23,46 @@ const CharacterPageView = props => {
                             {character.name}
                         </h1>
                         <div className="character-description-container">
-                            <div
+                            {/* <div
                             className="character-img"
                             style={{ backgroundImage: `url("${character.face_photo}")` }}
-                            ></div>
+                            ></div> */}
+                            <iframe
+                            class="character-video"
+                            width="560"
+                            height="315"
+                            src={character.youtube}
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            title="youtubes"></iframe>
                             <p className="character-description">
                                 {character.description}
                             </p>
+                            <div class="character-playlist-container">
+                                <h2 class="character-playlist-title">
+                                    Escucha las canciones favoritas de {character.name}:
+                                </h2>
+                                <iframe
+                                class="character-playlist"
+                                src={character.spotify}
+                                width="300"
+                                height="340"
+                                frameborder="0" 
+                                allowtransparency="true"
+                                title="spotify">
+                                </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
+                <h1 class="gallery-title">Galería</h1>
                 <Gallery
-                images={character.gallery}
-                imgCallback={setImageModal}/>
+                images={character.gallery}/>
             </div>
-            {getImageModal(imageInModalIndex)}
+            
         </div>
     );
 }

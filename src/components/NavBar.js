@@ -14,11 +14,11 @@ const NavBar = ({iconFlag, menuIconCallback, closeMenu}) => {
     return (
         <div className="navbar">
             <div className="navbar-item">
-            <div className={`icon ${iconClass}`} onClick={menuIconCallback}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-            </div>
+                <div className={`icon ${iconClass}`} onClick={menuIconCallback}>
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
             </div>
             <div className="navbar-item">
                 <Link to="/" onClick={closeMenu}>

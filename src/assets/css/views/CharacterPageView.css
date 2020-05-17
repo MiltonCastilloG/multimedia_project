@@ -43,11 +43,26 @@ since it needs to change depending on the character */
     background-size: cover;
 
 }
+.character-video{
+    align-self: center;
+}
 .character-description{
     word-wrap: break-word;
     white-space: pre-line;
     text-align: justify;
-    font-size: 22px;
+    font-size: 20px;
+}
+.character-playlist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.character-playlist-title{
+    text-align: center;
+}
+.character-playlist{
+    align-self: center;
+    padding: 15px;
 }
 .gallery-label{
     text-align: center;
@@ -61,5 +76,4 @@ since it needs to change depending on the character */
     .character-description{
         font-size: 18px;
     }
-    
 }

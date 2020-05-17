@@ -12,11 +12,10 @@ const App = () => {
     else document.body.style.overflow = "auto";
   }, [menuFlag]);
 
-  const toggleMenu = () => setMenuFlag(!menuFlag)
-  const closeMenu = () => setMenuFlag(false)
+  const toggleMenu = () => setMenuFlag(!menuFlag);
+  const closeMenu = () => setMenuFlag(false);
 
   const renderMenu = menuFlag ? <Menu closeMenu={closeMenu}/> : <div/>
-
 
   return (
     <BrowserRouter>

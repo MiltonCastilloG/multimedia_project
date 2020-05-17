@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../assets/css/views/Home.css';
 
 const Home = () => {
+    const audio_url = require("../assets/audio/cover_song.mp3");
+    
+    useEffect(()=>{
+        const audio = new Audio(audio_url);
+        audio.loop = false;
+        audio.play();
+        return ()=>{
+            audio.pause()
+        }
+    }, [audio_url]);
+
     return (
         <div className="cover">
             <div className="cover-content">

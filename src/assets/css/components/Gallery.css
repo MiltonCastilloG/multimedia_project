@@ -22,3 +22,6 @@
 .gallery-image:hover {
     opacity: 0.5;
 }
+.gallery-title{
+    text-align: center;
+}

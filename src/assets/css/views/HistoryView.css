@@ -5,6 +5,28 @@
     background-position: center;
     background-size: cover;
 }
+.recommendation-version {
+    background-image: url('../../img/books_wallpaper.jpg');
+}
+.curiosity-cover{
+    background-image: url('../../img/moon_phases.jpg');
+}
+.recommendation-version::before{
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
+    display: block;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+}
+.curiosity-cover::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+}
 .history-view-title{
     width: 100%;
     position: absolute;
@@ -38,6 +60,15 @@
     border-top-right-radius: 10px;
     cursor: pointer;
 }
+.history-view-media{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.history-audio {
+    padding: 12px;
+    align-self: center;
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .history-view-cover {
@@ -51,5 +82,11 @@
     }
     .history-chapter-button{
         width: 50%;
+    }
+    .curiosity-cover::before{
+        height: 450px;
+    }
+    .recommendation-version::before{
+        height: 450px;
     }
 }
