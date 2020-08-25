@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.17.1",
+    "prettier": "^1.19.1",
     "react-scripts": "3.4.1"
   },
   "dependencies": {

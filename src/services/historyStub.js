@@ -176,6 +176,14 @@ const historyStub = [
                 "content": "Mientras tanto, David y Alia no lograron estar juntos hasta dos años después, dado que David, tras lo ocurrido y sintiéndose impotente por no haber podido proteger a Alia cuando lo necesitaba, decidió posponer su declaración de amor. A pesar de la increíble experiencia que acababan de tener, sus vidas debían volver a la normalidad y este extraño viaje sería recordado por todos ellos el resto de su vida y quedaría como una increíble historia que compartir con el mundo."
             },
             {
+                "type": "image",
+                "src": require("../assets/img/gallery/chapter5/image9.png")
+            }, 
+            {
+                "type": "header",
+                "content": "Elecciones del Público"
+            },              
+            {
                 "type":"multi-image",
                 "src": [
                     require("../assets/img/gallery/chapter5/image18.jpg"),
@@ -186,8 +194,7 @@ const historyStub = [
                     require("../assets/img/gallery/chapter5/image5.jpg"),
                     require("../assets/img/gallery/chapter5/image10.jpg"),
                     require("../assets/img/gallery/chapter5/image11.jpg"),
-                    require("../assets/img/gallery/chapter5/image13.jpg"),
-                    require("../assets/img/gallery/chapter5/image9.png")
+                    require("../assets/img/gallery/chapter5/image13.jpg")
                 ]          
             }
         ]

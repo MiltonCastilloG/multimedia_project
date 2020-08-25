@@ -25,7 +25,9 @@ const HistoryView = () => {
     )
 
     const getHistoryContent = content => content.map(elem=>{
-        if (elem.type === "text")
+        if (elem.type === "header")
+            return <h2 className="header-title">{elem.content}</h2>
+        else if (elem.type === "text")
             return <p>{elem.content}</p>
         else if (elem.type === "audio")
             return (

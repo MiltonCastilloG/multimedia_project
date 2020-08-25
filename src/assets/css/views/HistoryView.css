@@ -27,6 +27,9 @@
     position: absolute;
     width: 100%;
 }
+.header-title{
+    text-align: center;
+}
 .history-view-title{
     width: 100%;
     position: absolute;
